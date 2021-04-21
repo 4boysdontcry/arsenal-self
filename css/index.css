@@ -1,10 +1,23 @@
 /********************** 글로벌 설정 *********************/
 html, body {font-size: 16px;}
-.wrapper {max-width: 1200px; padding: 1em;}
+.wrapper {max-width: 1200px; margin: auto;}
+
 
 /********************** header *********************/
+.header-wrapper {width: 100%; background-color: #f00000; color: #fff; position: relative;}
+.header-wrapper > .logo {width: 6%; position: absolute; top: 10%; left: 7%;}
+.header-wrapper > .logo img {width: 100%;}
 
+.header-wrapper > .wrapper > .top-header > .top-navi {padding: .7em 0; letter-spacing: -.5px; display: flex; justify-content: flex-end; border-bottom: 1px solid #ccc;}
+.header-wrapper > .wrapper > .top-header > .top-navi > a {margin-right: 1.5em; }
+.header-wrapper > .wrapper > .top-header > .top-navi > .navi {margin-right: 2em; font-size: .725em; font-weight: bold;}
 
+.header-wrapper > .wrapper > .bot-header {padding:0 1em; display: flex; font-size: .825em; justify-content: space-between; align-items: center;}
+.header-wrapper > .wrapper > .bot-header > .bot-navi {display: flex;}
+.header-wrapper > .wrapper > .bot-header > .bot-navi > .navi {padding: 1.5em 0; margin-right: 2em; font-weight: 600; border-bottom: 4px solid white;}
+.header-wrapper > .wrapper > .bot-header > .spon-wrapper {display: flex; width: 15%;}
+.header-wrapper > .wrapper > .bot-header > .spon-wrapper > .img-wrap {width: 33.3333%;}
+.header-wrapper > .wrapper > .bot-header > .spon-wrapper > .img-wrap > a > img {width: 100%;}
 
 /********************** main *********************/
 
