@@ -1,5 +1,5 @@
 /********************** 글로벌 설정 *********************/
-html, body {font-size: 16px;}
+html, body {font-size: 16px; height: 10000px;}
 .wrapper {max-width: 1300px; margin: auto;}
 
 button.bt {background-color: #f00000; color: #fff; padding: .75em 1.125em; border-radius: 3px;}
@@ -53,6 +53,7 @@ button.btn:hover {background-color: #ccc; color: #f00000;}
 .sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap.gender > .navi {margin-bottom: 2em; color: #f00000; font-weight: bold; text-align: center;}
 .sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap.gender > .navi > a:hover {text-decoration: underline;}
 .sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap > .navi > a > i {margin-right: .5em; color: #f00000;}
+.sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap > .navi > .fea-img > img {width: 100%;}
 
 /*** .sub-navi-wrapper news **/
 .news {display: none; font-size: 1.125em; font-weight: 600;}
@@ -86,6 +87,36 @@ button.btn:hover {background-color: #ccc; color: #f00000;}
 .sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap {}
 .sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap > .time {color: #444;}
 .sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap > .time > span {color: #666;}
+
+/*** sub-navi-wrapper tickets **/
+.tickets {display: none;}
+.sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap > .fea-navi {width: 80%; background-color: rgb(248, 248, 248); box-shadow: 0 0 4px rgba(0, 0, 0, .7);}
+.sub-navi-wrapper > .sub-navi-inwrap > .sub-navi-wrap > .fea-navi > a {padding: 1em;}
+.tickets > .sub-navi-inwrap > .sub-navi-wrap > .fea-navi > a {text-decoration: underline #f00000;}
+.tickets > .sub-navi-inwrap > .sub-navi-wrap > .navi > .fea-img {}
+
+
+/*** sub-navi-wrapper history **/
+.history {display: none;}
+
+/*** sub-navi-wrapper the club **/
+.club {display: none;}
+.club > .sub-navi-inwrap > .contact .navi > p > span {color: #666; line-height: 2; font-weight: 500;}
+.club > .sub-navi-inwrap > .contact .navi:nth-child(2) {color: #f00000;}
+.club > .sub-navi-inwrap > .contact .navi:nth-child(2) > a:hover {text-decoration: underline #f00000;}
+.club > .sub-navi-inwrap > .contact .navi:last-child {color: #f00000;}
+.club > .sub-navi-inwrap > .contact .navi:last-child > a:hover {text-decoration: underline #f00000;}
+
+/*** sub-navi-wrapper the fans **/
+.fans {display: none;}
+.fans >  .sub-navi-inwrap > .follow > .sns {display: flex; justify-content: space-between;}
+.fans >  .sub-navi-inwrap > .follow > .sns > .navi > a > i {border: 1px solid #666; border-radius: 6px; padding: .5em; font-size: 2em; margin-bottom: .5em;}
+.fans >  .sub-navi-inwrap > .follow > .sns > .navi > a > i:hover {border: 1px solid #f00000;}
+.fans >  .sub-navi-inwrap > .follow > .sns > .navi > a:hover {color: #f00000;}
+
+/*** sub-navi-wrapper the store **/
+.store {display: none;}
+.store > .sub-navi-inwrap > .sub-navi-wrap > .store-navi {border-top: 3px solid #f00000;} 
 
 
 /********************** main *********************/
