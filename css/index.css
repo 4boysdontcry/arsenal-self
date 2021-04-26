@@ -131,7 +131,7 @@ button.btn:hover {background-color: #ccc; color: #f00000;}
 .main-article {}
 .main-article > .bot-article {display: flex;}
 
-.article {border-top: 3px solid #f00000; font-weight: bold; box-shadow: 1px 1px 0 rgba(0, 0, 0, .2);}
+.article {border-top: 3px solid #f00000; font-weight: bold; box-shadow: 1px 1px 0 rgba(0, 0, 0, .2); width: 33.3333%;}
 .article:hover > .main-img {}
 .article > .main-img > img {}
 .article > .main-desc {padding: 1em;}
@@ -147,6 +147,9 @@ button.btn:hover {background-color: #ccc; color: #f00000;}
 
 .article3 > .main-img {width: 100%;}
 .article3 > .main-img > img {width: 100%;}
+
+.article4 > .main-img {width: 100%;}
+.article4 > .main-img > img {width: 100%;}
 
 /********************** ad *********************/
 
