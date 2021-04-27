@@ -1,13 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+/* font-family: 'Jost', sans-serif; */
+
+
 /********************** 글로벌 설정 *********************/
-html, body {font-size: 16px; height: 10000px;}
+html, body {font-size: 16px; height: 10000px; font-family: 'Jost', sans-serif; background-color: #eee;}
 .wrapper {max-width: 1400px; margin: auto; padding: .5em;}
-.wrapper > .main-home {max-width: 70%;}
+.wrapper > .main-home {max-width: 85%;}
 
 button.bt {background-color: #f00000; color: #fff; padding: .75em 1.125em; border-radius: 3px;}
 button.bt:hover {background-color: #bd1313;}
 button.btn {color: #f00000; padding: .75em 1.125em; margin-top: 1em;}
 button.btn:hover {background-color: #ccc; color: #f00000;}
 
+.whole-wrapper {display: flex;}
 
 /********************** header *********************/
 .header-wrapper {width: 100%; background-color: #f00000; color: #fff; position: relative;}
@@ -131,7 +136,7 @@ button.btn:hover {background-color: #ccc; color: #f00000;}
 .main-article {}
 .main-article > .bot-article {display: flex;}
 
-.article {border-top: 3px solid #f00000; font-weight: bold; box-shadow: 1px 1px 0 rgba(0, 0, 0, .2); width: 33.3333%;}
+.article {background-color: #fff; border-top: 3px solid #f00000; font-weight: bold; box-shadow: 1px 1px 0 rgba(0, 0, 0, .2); width: 33.3333%;}
 .article:hover > .main-img {}
 .article > .main-img > img {}
 .article > .main-desc {padding: 1em;}
@@ -151,12 +156,65 @@ button.btn:hover {background-color: #ccc; color: #f00000;}
 .article4 > .main-img {width: 100%;}
 .article4 > .main-img > img {width: 100%;}
 
+
+
+
 /********************** ad *********************/
+.main-ad {padding: 2em}
+.ad {width: 100%; margin-bottom: 1em;}
+/* ********** ad1 *********** */
+
+/* ********** ad2 *********** */
+.ad2 {margin-bottom: 1em; background-color: #151d2d; border-top: 3px solid #f00000; color: #fff; font-weight: 600; cursor: pointer;}
+.ad2 > .ad-wrapper {padding: 8%;}
+.ad2 > .ad-wrapper > p {font-size: .925em; color: #ccc; line-height: 2; margin-bottom: 1em;}
+.ad2 > .ad-wrapper .match {display: flex; padding: 1em; border-top: 1px solid #444; border-bottom: 1px solid #444; transition: all .5s;}
+.ad2 > .ad-wrapper .match:hover {color: #f00000;}
+.ad2 > .ad-wrapper .match > .vs {padding: 0 .5em; font-size: 4em;}
+.ad2 > .ad-wrapper .match > .team > p {font-size: 1em; text-align: center;}
+.ad2 > .ad-wrapper .match > .team > .img-wrap {width: 100%;}
+.ad2 > .ad-wrapper .match > .team > .img-wrap > img {width: 100%;}
+.ad2 > .ad-wrapper .bt-wrap {width: 100%; display: flex;}
+.ad2 > .ad-wrapper .bt-wrap > .but {width: 50%; padding: 2em 0 .5em 0; color: #fff; font-size: .8em; transition: all .5s;}
+.ad2 > .ad-wrapper .bt-wrap > .but:hover {color: #f00000;}
+.ad2 > .ad-wrapper .bt-wrap > .but::after {display: inline-block; content: '〉'; margin-left: .5em;}
+
+/* ********** ad3 *********** */
+.ad3 {background-color: #f00000; padding: 1em; color: #fff; font-size: 1em; transition: all .5s;}
+.ad3:hover {background-color: #a20000;}
+.ad3 > a {display: flex; }
+.ad3 > a > i {margin-left: auto;}
 
 
+/* ********** ad4 *********** */
+.ad4 {background-color: #fff; border-top: 3px solid #f00000; box-shadow: 0 0 3px rgba(0, 0, 0, .2); font-weight: 600;}
+.ad4 > .ad-wrapper {padding: 8%;}
+.ad4 > .ad-wrapper > .head {display: flex;}
+.ad4 > .ad-wrapper > .head > h2 > p {font-size: .925em; color: #ccc; line-height: 2;}
+.ad4 > .ad-wrapper > .head > a {margin-left: auto; border: 1px solid #bbb; border-radius: 5px; padding: .5em .8em;}
+.ad4 > .ad-wrapper > .head > a > p {font-size: 1.5em; color: #f00000;}
+.ad4 > .ad-wrapper > .full {width: 100%;}
+.ad4 > .ad-wrapper .match {width: 100%; display: flex; padding: 1em 0; border-bottom: 1px solid #444; display: flex; align-items: center; transition: all .5s;}
+.ad4 > .ad-wrapper .match:hover {color: #f00000;}
+.ad4 > .ad-wrapper .match > .desc {font-size: 1em;}
+.ad4 > .ad-wrapper .match > .score {margin-left: auto; font-size: 2.5em;}
+.ad4 > .ad-wrapper .match > .score > p > span {color: #f00000;}
+.ad4 > .ad-wrapper .match > .team {}
+.ad4 > .ad-wrapper .match > .team > .img-wrap {width: 80%;}
+.ad4 > .ad-wrapper .match > .team > .img-wrap > img {width: 100%;}
+.ad4 > .ad-wrapper .bt-wrap {width: 100%; text-align: center;}
+.ad4 > .ad-wrapper .bt-wrap > .but {padding: 2em 0 1em 0; font-size: 1.125em; transition: all .5s;}
+.ad4 > .ad-wrapper .bt-wrap > .but::after {display: inline-block; content: '〉'; margin-left: .5em;}
+.ad4 > .ad-wrapper .bt-wrap > .but:hover {color: #f00000;}
 
-
-
+/* ********** ad5 *********** */
+.ad5 {font-weight: 600;}
+.ad5 > h4 {font-size: 2em; margin-bottom: 1em;}
+.ad5 > h4::after {content: ''; background-color: #bbb; width: 40px; height: 5px; display: block;
+  position: absolute; margin-top: 5px;}
+  .ad5 > ul {display: flex; justify-content: space-between; margin-bottom: 1em;}
+  .ad5 > ul > li {color: #666; font-size: 2.825em; border: 1px solid #bbb; border-radius: 5px; background-color: #fff;}
+  .ad5 > ul > li > a > i {padding: .2em}
 
 
 
