@@ -1,30 +1,39 @@
 /*************** 글로벌 설정 *****************/
-var naviLen = $('.navi').index
-console.log(naviLen)
-// console.log($(navi[0]))  // []안은 length값을 넣어 호출 가능 (0 ~ n)
+var $navi = $('.bot-header .navi')
+console.log($navi)
+
+var $subNavi = $('.sub-menu .sub-navi-wrapper')
+console.log($subNavi)
+
+var len = $('.bot-header .navi').length
+console.log(len)
+
+var subLen = $('.sub-menu .sub-navi-wrapper').length
+console.log(subLen)
+
+var lastIdx = len - 1
+console.log(lastIdx)
+
 
 /*************** 사용자 함수 *****************/
 
-// var navi = $('.bot-header .navi')
-// var subNavi = $('sub-menu .sub-navi-wrapper')
-// var subIdx = each('.sub-navi-wrapper').length[each]
-
-var navi = $('.navi')
-var idx = navi.index()
-console.log($(navi.idx()))
 
 
 // /*************** 이벤트 등록 *****************/
-// $(navi[idx]).on('mouseenter', showSubNavi)
-// $(subNavi[subIdx]).on('mouseleave', hideSubNavi)
+$navi.on('mouseenter', onShowSubNavi)
+$subNavi.on('mouseleave', onHideSubNavi)
 
 
 // /*************** 이벤트 콜백 *****************/
-// function showSubNavi(){
-//     subNavi[subIdx].show()
-// }
+function onShowSubNavi(){
+    $navi.css('color','#ddd').removeClass('active')
+    $(this).css('color','#fff').addClass('active')
+    var idx = $(this).data('idx')
+    $subNavi.hide()
+    $subNavi.eq(idx).show()
+}
 
-// function hideSubNavi(){
-//     $('.sub-navi-wrapper').hide()
-// }
-
+function onHideSubNavi(){
+    $subNavi.hide()
+    $navi.css('color','#fff').removeClass('active')
+}
