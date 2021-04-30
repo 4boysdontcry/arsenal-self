@@ -4,6 +4,7 @@
 
 /********************** 글로벌 설정 *********************/
 html, body {font-size: 16px; height: 10000px; font-family: 'Jost', sans-serif; background-color: #eee;}
+body {}
 .wrapper {max-width: 1400px; margin: auto; padding: .5em;}
 .wrapper > .main-home {max-width: 85%;}
 
@@ -251,6 +252,10 @@ z-index: 99;}
 .ad5 > ul > li:hover {color: #f00000; border: 1px solid #f00000; transition: all 1s;}
 .ad5 > ul > li > a > i {padding: .2em}
 
+
+/* ***************aside**************** */
+.side-wrapper > a {width: 60px; height: 60px; position: fixed; bottom: 5%; right: 5%; background-color: #f00000; display: flex; justify-content: center; align-items: center; border-radius: 50%;}
+.side-wrapper a > img{width: 50%; height: 50%;}
 
 
 /********************** 반응형 설정 *********************/
