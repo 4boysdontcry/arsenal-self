@@ -1,0 +1,12 @@
+{
+  "shop":[
+    {"id": 1, "src": "../img/shop/home_at", "link": "#"},
+    {"id": 2, "src": "../img/shop/", "link": "#"},
+    {"id": 3, "src": "../img/shop/", "link": "#"},
+    {"id": 4, "src": "../img/shop/", "link": "#"},
+    {"id": 5, "src": "../img/shop/", "link": "#"},
+    {"id": 6, "src": "../img/shop/", "link": "#"},
+    {"id": 7, "src": "../img/shop/", "link": "#"},
+    {"id": 8, "src": "../img/shop/", "link": "#"},
+  ]
+}
