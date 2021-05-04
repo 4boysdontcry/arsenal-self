@@ -1,0 +1,12 @@
+{
+  "shop":[
+    {"id": 1, "src": "../img/shop/home_at.jpg", "subject": "Home Authentic", "title": "20/21 Home Authentic", "price": "￡120.99", "link": "#"},
+    {"id": 2, "src": "../img/shop/home_rep.jpg", "subject": "Home Replica", "title": "20/21 Home Replica", "price": "￡70.99", "link": "#"},
+    {"id": 3, "src": "../img/shop/away_at.jpg", "subject": "Away Authentic", "title": "20/21 Away Authentic", "price": "￡120.99", "link": "#"},
+    {"id": 4, "src": "../img/shop/away_rep.jpg", "subject": "Away Replica", "title": "20/21 Away Replica", "price": "￡70.99", "link": "#"},
+    {"id": 5, "src": "../img/shop/sp_top.jpg", "subject": "Special Edition", "title": "Adidas Human Race Shirt", "price": "￡150.99", "link": "#"},
+    {"id": 6, "src": "../img/shop/sp_shoe.jpg", "subject": "Special Edition", "title": "Adidas Human Race Shoes", "price": "￡130.99", "link": "#"},
+    {"id": 7, "src": "../img/shop/424_cap.jpg", "subject": "Arsenal X 424", "title": "Arsenal x 424 Cap", "price": "￡90.99", "link": "#"},
+    {"id": 8, "src": "../img/shop/424_shoe.jpg", "subject": "Arsenal X 424", "title": "Arsenal x 424 flip-flops", "price": "￡32.15", "link": "#"}
+  ]
+}
