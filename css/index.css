@@ -130,7 +130,7 @@ z-index: 99;}
 
 /*** sub-navi-wrapper the store **/
 .store {display: none;}
-.store > .sub-navi-inwrap > .sub-navi-wrap > .store-navi {border-top: 3px solid #f00000;} 
+.store > .sub-navi-inwrap > .sub-navi-wrap > .store-navi > a {border-top: 3px solid #f00000;} 
 
 
 /********************** main *********************/
