@@ -42,13 +42,13 @@ function onHideSubNavi(){
 function slideShop() {
     var $shop = $('.shop-wrapper');
     var $slideWrapper = $shop.find('.slide-wrapper');
-    
     function onGetData(r) {
         r.shop.forEach(function (v, i) {
             var html = '';
             html += '<li class="slide">';
             html += '<div class="img-wrap">';
             html += '<img src="' + v.src + '" alt="의류" class="w-100">';
+            html += '<div class="hover-bg"> <button>shop now</button> </div>';
             html += '</div>';
             html += '<div class="desc-wrap">';
             html += '<h4 class="subject">'+ v.subject +' </h4>';
@@ -58,7 +58,16 @@ function slideShop() {
             html += '</li>';
             $slideWrapper.append(html);
         })
-        var swiper = getSwiper('.shop-wrapper', { break: 3, speed: 600 });
+        var swiper = getSwiper('.shop-wrapper', { break: 3, pager: true, navi: true });
 		}
     $.get('../json/shop.json', onGetData);
 }
+
+
+function onThumbClick(){
+	var src = $(this).attr('src');
+	$('.main-stage > img').attr('src', src);
+	$('.img-gallery > .img-wrap').removeClass('active');
+	$(this).parent().addClass('active');
+}
+$('.img-gallery img').on('click', onThumbClick);

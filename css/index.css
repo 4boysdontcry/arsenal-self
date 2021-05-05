@@ -3,7 +3,7 @@
 
 
 /********************** 글로벌 설정 *********************/
-html, body {font-size: 16px; height: 10000px; font-family: 'Jost', sans-serif; background-color: #eee;}
+html, body {font-size: 16px; font-family: 'Jost', sans-serif; background-color: #eee;}
 body {}
 .wrapper {max-width: 1400px; margin: auto; padding: .5em;}
 .wrapper > .main-home {max-width: 85%;}
@@ -138,6 +138,7 @@ z-index: 99;}
 /* ********** common *********** */
 .main-bar {width: 100%; background-color: #f00000; color: #fff; padding: 1em; margin: 2em 0;}
 .main-bar > p {font-size: 1.5em;}
+.main-bar > p > i {margin-right: 1em;}
 
 .main-img {position: relative; overflow: hidden;}
 .main-img img-wrap {position: relative; overflow: hidden;}
@@ -148,9 +149,9 @@ z-index: 99;}
 .article:hover .main-desc h3 {color: #f00000;}
 .article:hover .hover-bg {opacity: .6;}
 
-.art-scale > .main-img {width: 100%;}
-.art-scale > .main-img > img {width: 100%;}
-.art-scale:hover img{transform: scale(1.1);}
+.article > .main-img {width: 100%;}
+.article > .main-img > img {width: 100%;}
+.article:hover img{transform: scale(1.1);}
 
 .article-b:not(:last-child) {width: 33.3333%; margin-right: 1em;}
 .article-b > .main-img {width: 100%; height: 200px; overflow: hidden;}
@@ -193,12 +194,15 @@ z-index: 99;}
 
 /* ********** shop-wrapper *********** */
 .shop-wrapper {width: 100%;}
-.shop-wrapper .slide-stage {border: 1px solid red; margin: 5%; position: relative;}
+.shop-wrapper .slide-stage {border: 1px solid red; margin: 5% 5% 0 5%; position: relative;}
 .shop-wrapper .slide-stage .slide-container{width: calc(100% - 80px); overflow: hidden;}
 .shop-wrapper .slide-stage .slide-wrapper {width: 200%;}
-.shop-wrapper .slide-stage .slide {flex: 15% 0 0; border: 1px solid green; cursor: pointer; margin: 0 1%; padding: 1%; background-color: #fff;}
+.shop-wrapper .slide-stage .slide {flex: 15% 0 0; border: 1px solid green; cursor: pointer; margin: 0 1%; padding: 1%; background-color: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);}
+.shop-wrapper .slide-stage .slide:hover .img-wrap img {transform: scale(1.1); transition: all .5s;}
+.shop-wrapper .slide-stage .slide:hover .desc-wrap .title {color: #f00000; transition: all .5s;}
 
-.shop-wrapper .slide-stage .slide .img-wrap {width: 100%; margin-bottom: 5%; border-bottom: 1px solid #ccc;}
+.shop-wrapper .slide-stage .slide .img-wrap {width: 100%; margin-bottom: 5%; border-bottom: 1px solid #ccc; overflow: hidden; padding-top: .5em; position: relative;}
 .shop-wrapper .slide-stage .slide .img-wrap img {width: 100%; margin-bottom: 1em;}
 
 .shop-wrapper .slide-stage .slide .desc-wrap {display: flex; flex-direction: column; width: 100%;}
@@ -210,6 +214,30 @@ z-index: 99;}
 .slide-stage .bt-slide:hover {background-color: #151d2d;}
 .slide-stage .bt-slide.left {left: -50px;}
 .slide-stage .bt-slide.right {right: -50px;}
+
+.slide-stage .slide .img-wrap > .hover-bg {width: 100%; height: 100%; background-color: #bd1313; opacity: 0; position: absolute; top: 0; left: 0;
+  transition: all .5s;}
+.slide-stage .slide:hover .img-wrap > .hover-bg {opacity: .7;}
+
+.slide-stage .slide .img-wrap > .hover-bg > button {position: absolute; top: 50%; left: 50%; border: 1px solid #fff; color: #fff; padding: .5em 1em; transform: translate(-50%, -50%)}
+
+
+/* ********** wall-wrapper *********** */
+.wall-wrapper .main-stage {width: 100%; margin-bottom: 1em; box-shadow: 0 0 6px rgba(0, 0, 0, .5); cursor: pointer; overflow: hidden; position: relative;}
+.wall-wrapper .main-stage:hover > img {transition: all .5s; transform: scale(1.1);}
+.wall-wrapper .main-stage img {width: 100%; height: 550px;}
+.wall-wrapper .img-gallery {width: 100%; display: flex;}
+.wall-wrapper .img-gallery .img-wrap {width: 15%; height: 60px;  box-shadow: 0 0 6px rgba(0, 0, 0, .5); overflow: hidden; cursor: pointer;}
+.wall-wrapper .img-gallery .img-wrap:not(:last-child) {margin-right: 1%;}
+.wall-wrapper .img-gallery .img-wrap img {width: 100%;}
+.wall-wrapper .img-gallery .img-wrap.active {transition: all .5s; transform: scale(1.1);}
+
+.main-stage > .hover-bg {width: 100%; height: 100%; background-color: #bd1313; opacity: 0; position: absolute; top: 0; left: 0;
+  transition: all .5s;}
+.main-stage:hover .hover-bg {opacity: .7;}
+.main-stage  > .hover-bg > button {position: absolute; top: 50%; left: 50%; border: 1px solid #fff; color: #fff;
+  font-size: 2em; padding: .5em 1em; transform: translate(-50%, -50%)}
+
 
 /********************** ad *********************/
 
@@ -276,8 +304,28 @@ z-index: 99;}
 
 /* ***************aside**************** */
 .side-wrapper > a {width: 60px; height: 60px; position: fixed; bottom: 5%; right: 5%; background-color: #f00000; display: flex; justify-content: center; align-items: center; border-radius: 50%;}
-.side-wrapper a > img{width: 50%; height: 50%;}
+.side-wrapper a > i {font-size: 1.5em; color: #fff; }
 
+
+/* *************** footer **************** */
+.footer-wrapper {width: 100%; padding: 2em; background-color: #151d2d;color: #fff;}
+.footer-wrapper .wrapper {display: flex;}
+.footer-wrapper .footer-wrap {width: 33.3333%; padding: 3em;}
+.footer-wrapper .footer-wrap:not(:last-child) {border-right: 1px solid #666;}
+.footer-wrapper .footer-wrap > .spon-list {display: flex; justify-content: space-between; align-content: center;}
+.footer-wrapper .footer-wrap > .spon-list .spon {width: 33.3333%;}
+.footer-wrapper .footer-wrap > .spon-list .spon img {width: 100%;}
+
+.footer-wrapper .footer-wrap .title {font-size: 2.25em; margin-bottom: 1em;}
+.footer-wrapper .footer-wrap .title:after {content: ''; width: 40px; border-radius: 5px; height: 0; display: block; border: 5px solid #444;}
+.footer-wrapper .footer-wrap .pol {font-size: 1.5em; margin-bottom: .825em; cursor: pointer;}
+.footer-wrapper .footer-wrap .pol:hover {transition: all .5s; color: #a20000;}
+
+.footer-wrapper .footer-wrap .contact .con-list {margin-bottom: 1em; font-size: 1.5em;}
+.footer-wrapper .footer-wrap .contact .con-list > i {margin-right: .5em;}
+.footer-wrapper .footer-wrap .contact .con-list:last-child  a {font-size: .725em;}
+
+.footer-wrapper > p {text-align: center;}
 
 /********************** 반응형 설정 *********************/
 @media (max-width: 1399px) {
