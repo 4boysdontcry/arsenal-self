@@ -1,18 +1,14 @@
 /*************** 글로벌 설정 *****************/
 var $navi = $('.bot-header .navi')
-console.log($navi)
-
 var $subNavi = $('.sub-menu .sub-navi-wrapper')
-console.log($subNavi)
+var $monavi = $('.mo-navi-wrapper .mo-bars')
+var $moSubnavi = $('.mo-subnavi-wrapper')
+var $subClose = $('.mo-subnavi-wrapper .sub-close')
+
 
 var len = $('.bot-header .navi').length
-console.log(len)
-
 var subLen = $('.sub-menu .sub-navi-wrapper').length
-console.log(subLen)
-
 var lastIdx = len - 1
-console.log(lastIdx)
 
 
 /*************** 사용자 함수 *****************/
@@ -23,10 +19,23 @@ slideShop();
 // /*************** 이벤트 등록 *****************/
 $navi.on('mouseenter', onShowSubNavi)
 $subNavi.on('mouseleave', onHideSubNavi)
+$monavi.on('click', onShowMoSubnavi)
+$subClose.on('click', onhideMoSubnavi)
+
+
 
 // /*************** 이벤트 콜백 *****************/
+
+function onhideMoSubnavi(){
+    $moSubnavi.hide()
+}
+
+function onShowMoSubnavi(){
+    $moSubnavi.show()
+}
+
 function onShowSubNavi(){
-    $navi.css('color','#ddd').removeClass('active')
+    $navi.css('color','rgba(255,255,255,0.5)').removeClass('active')
     $(this).css('color','#fff').addClass('active')
     var idx = $(this).data('idx')
     $subNavi.hide()

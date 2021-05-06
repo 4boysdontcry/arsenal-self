@@ -1,5 +1,3 @@
-/********************** ad *********************/
-
 /* ********** common *********** */
 .main-ad {padding: 2em}
 .ad {width: 100%; margin-bottom: 1em;}
@@ -59,3 +57,25 @@
 .ad5 > ul > li {color: #666; font-size: 2.825em; border: 1px solid #bbb; border-radius: 5px; background-color: #fff;}
 .ad5 > ul > li:hover {color: #f00000; border: 1px solid #f00000; transition: all 1s;}
 .ad5 > ul > li > a > i {padding: .2em}
+
+
+/********************** 반응형 설정 *********************/
+@media (max-width: 1399px) {
+    
+}
+
+@media (max-width: 1199px) {
+    .main-ad {display: none;}
+}
+
+@media (max-width: 991px) {
+    
+}
+
+@media (max-width: 767px) {
+    
+}
+
+@media (max-width: 575px) {
+    
+}
