@@ -65,7 +65,7 @@
 }
 
 @media (max-width: 1199px) {
-    .main-ad {display: none;}
+    .main-ad {display: none; padding: 0;}
 }
 
 @media (max-width: 991px) {

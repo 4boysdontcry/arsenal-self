@@ -69,13 +69,14 @@ function slideShop() {
         })
         var swiper = getSwiper('.shop-wrapper', { break: 3, pager: true, navi: true });
 		}
+        if($(window.innerWidth) >= '1199px'){'.shop-wrapper', { break: 1, pager: true, navi: true }};
     $.get('../json/shop.json', onGetData);
 }
 
 
 function onThumbClick(){
 	var src = $(this).attr('src');
-	$('.main-stage > img').attr('src', src);
+	$('.main-stage img').attr('src', src);
 	$('.img-gallery > .img-wrap').removeClass('active');
 	$(this).parent().addClass('active');
 }
