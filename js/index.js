@@ -81,3 +81,14 @@ function onThumbClick(){
 	$(this).parent().addClass('active');
 }
 $('.img-gallery img').on('click', onThumbClick);
+
+
+function onResize(e) {
+    $('.ratio-wrap').each(function(i) {
+        var ratio = $(this).data('ratio');
+        var width = $(this).innerWidth();
+        var height = width * Number(ratio);
+        $(this).innerHeight(height);
+    })
+}
+$(window).resize(onResize).trigger('resize');

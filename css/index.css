@@ -16,7 +16,7 @@
 .article:hover img{transform: scale(1.1);}
 
 .article-b:not(:last-child) {width: 33.3333%; margin-right: 1em;}
-.article-b > .main-img {width: 100%; height: 200px; overflow: hidden;}
+.article-b > .main-img {width: 100%; overflow: hidden;}
 .article-b > .main-img > .img-wrap {width: 100%; height: 100%;}
 .article-b > .main-img > .img-wrap > img {width: 100%; height: 100%;}
 
@@ -47,7 +47,7 @@
 .trend-wrapper .article4 .img-wrap {background-image: url(../img/main/하이라이트.jpg); background-repeat: no-repeat; background-size: cover;}
 
 .article1 {width: 100%; display: flex; margin-bottom: 1em;}
-.article1 .main-img {min-width: 70%; height: 300px;}
+.article1 .main-img {min-width: 70%;}
 .article1 .main-img > .img-wrap {width: 100%; height: 100%;}
 .article1:hover img{transform: scale(1.1);}
 
@@ -95,7 +95,7 @@
 
 
 /* ********** wall-wrapper *********** */
-.wall-wrapper .main-stage {width: 100%; height: 500px; margin-bottom: 1em; box-shadow: 0 0 6px rgba(0, 0, 0, .5); cursor: pointer; overflow: hidden; position: relative;}
+.wall-wrapper .main-stage {width: 100%; margin-bottom: 1em; box-shadow: 0 0 6px rgba(0, 0, 0, .5); cursor: pointer; overflow: hidden; position: relative;}
 /* .wall-wrapper .main-stage .img-wrap {width: 100%; height: 100%; background-image: url(../img/gallery/0304.jpg); background-repeat: no-repeat; background-size: cover;} */
 .wall-wrapper .main-stage .img-wrap {}
 .wall-wrapper .main-stage .img-wrap > img {width: 100%; height: 100%;}
@@ -131,23 +131,7 @@
 
   .article2 .main-img,
   .article3 .main-img,
-  .article4 .main-img {min-width: 50%; max-width: 50%; height: 200px;}
-
-  .article2 .main-img > .img-wrap,
-  .article3 .main-img > .img-wrap,
-  .article4 .main-img > .img-wrap {width: 100%;}
-
-  .article1 .main-desc > .subject,
-  .article2 .main-desc > .subject,
-  .article3 .main-desc > .subject,
-  .article4 .main-desc > .subject {font-size: .5em;}
-
-  .article1 .main-desc > .title,
-  .article2 .main-desc > .title,
-  .article3 .main-desc > .title,
-  .article4 .main-desc > .title {font-size: .5em;}
-
-  .article1 .main-desc > .desc {font-size: .825em;}
+  .article4 .main-img {min-width: 50%; max-width: 50%;}
 
   .divide-wrapper {display: flex; justify-content: space-between;}
   .divide-wrapper .divide {background-color: #ccc; width: 30%; height: 0; margin-top: 4em; border-radius: 5px;}
@@ -156,22 +140,30 @@
   .slide-stage .bt-slide.left {left: -10px;}
   .slide-stage .bt-slide.right {right: -10px;}
 
-  .wall-wrapper .main-stage {height: 500px;}
 }
 
 @media (max-width: 991px) {
-  .wall-wrapper .main-stage {height: 400px;}
+  
 }
 
 @media (max-width: 767px) {
-  .wall-wrapper .main-stage {height: 300px;}
+  .article1 .main-desc > .subject,
+  .article2 .main-desc > .subject,
+  .article3 .main-desc > .subject,
+  .article4 .main-desc > .subject {font-size: .425em;}
+
+  .article1 .main-desc > .title,
+  .article2 .main-desc > .title,
+  .article3 .main-desc > .title,
+  .article4 .main-desc > .title {font-size: .65em;}
+
+  .article1 .main-desc > .desc {font-size: .825em;}
 }
 
 @media (max-width: 575px) {
-  .wall-wrapper .main-stage {height: 200px;}
+  .article1 .main-desc > .desc {display: none;}
 }
 
 @media (max-width: 320px) {
-  .wall-wrapper .main-stage {height: 170px;}
   
 }
