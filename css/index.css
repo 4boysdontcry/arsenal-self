@@ -20,9 +20,10 @@
 .article-b > .main-img > .img-wrap {width: 100%; height: 100%;}
 .article-b > .main-img > .img-wrap > img {width: 100%; height: 100%;}
 
-.divide-wrapper {display: flex; justify-content: space-between;}
-.divide-wrapper .divide {background-color: #ccc; width: 30%; height: 0; margin-top: 4em; border-radius: 5px;}
+.divide-wrapper {display: flex; justify-content: space-between; font-size: .925em;}
+.divide-wrapper .divide {background-color: #ccc; width: 30%; height: 3px; margin-top: 4em; border-radius: 5px;}
 .divide-wrapper .bt-seemore {margin: 3em 1em; text-align: center; display: flex; justify-content: center;}
+
 
 
 /* ********** main-score *********** */
@@ -57,11 +58,6 @@
 
 .article4 > .main-img {width: 100%;}
 .article4 > .main-img > img {width: 100%;}
-
-.main-article .bt-seemore {display: flex; justify-content: center;}
-.main-article .divide-wrapper {display: flex; justify-content: space-between;}
-.main-article .divide-wrapper .divide {border: 1px solid #ccc; width: 30%; height: 3px; margin-top: 4em;}
-.main-article .divide-wrapper .bt-seemore {margin: 3em 1em; text-align: center;}
 
 
 /* ********** shop-wrapper *********** */
@@ -133,9 +129,9 @@
   .article3 .main-img,
   .article4 .main-img {min-width: 50%; max-width: 50%;}
 
-  .divide-wrapper {display: flex; justify-content: space-between;}
-  .divide-wrapper .divide {background-color: #ccc; width: 30%; height: 0; margin-top: 4em; border-radius: 5px;}
-  .divide-wrapper .bt-seemore {margin: 3em 1em; text-align: center; display: flex; justify-content: center; font-size: .725em;}
+  .divide-wrapper {display: flex; justify-content: center;}
+  .divide-wrapper .divide {display: none;}
+  .divide-wrapper .bt-seemore {text-align: center; display: flex; justify-content: center; font-size: .725em;}
 
   .slide-stage .bt-slide.left {left: -10px;}
   .slide-stage .bt-slide.right {right: -10px;}
@@ -147,10 +143,14 @@
 }
 
 @media (max-width: 767px) {
+ 
+}
+
+@media (max-width: 575px) {
   .article1 .main-desc > .subject,
   .article2 .main-desc > .subject,
   .article3 .main-desc > .subject,
-  .article4 .main-desc > .subject {font-size: .425em;}
+  .article4 .main-desc > .subject {font-size: .325em;}
 
   .article1 .main-desc > .title,
   .article2 .main-desc > .title,
@@ -160,10 +160,7 @@
   .article1 .main-desc > .desc {font-size: .825em;}
 }
 
-@media (max-width: 575px) {
+@media (max-width: 450px) {
   .article1 .main-desc > .desc {display: none;}
-}
-
-@media (max-width: 320px) {
   
 }
