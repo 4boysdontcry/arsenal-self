@@ -126,12 +126,12 @@
   .main-article > .bot-article {display: block;}
   .bot-article > .article-b {width: 100%; margin-right: 0; display: flex; margin-bottom: 1em;}
 
-  .article1 .main-img {min-width: 50%;}
+  .article1 .main-img {min-width: 60%; max-width: 60%;}
   .article1 .main-img > .img-wrap {width: 100%;}
 
   .article2 .main-img,
   .article3 .main-img,
-  .article4 .main-img {width: 40%; height: 200px;}
+  .article4 .main-img {min-width: 50%; max-width: 50%; height: 200px;}
 
   .article2 .main-img > .img-wrap,
   .article3 .main-img > .img-wrap,
@@ -145,7 +145,7 @@
   .article1 .main-desc > .title,
   .article2 .main-desc > .title,
   .article3 .main-desc > .title,
-  .article4 .main-desc > .title {font-size: 1em;}
+  .article4 .main-desc > .title {font-size: .5em;}
 
   .article1 .main-desc > .desc {font-size: .825em;}
 
