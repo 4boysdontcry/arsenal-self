@@ -25,8 +25,9 @@ button.btn:hover {background-color: #ccc; color: #f00000;}
 .header-wrapper > .wrapper > .logo-wrapper > .logo img {width: 100%;}
 
 .header-wrapper > .wrapper > .header-inwrap {width: 92%;}
-.header-wrapper > .wrapper > .header-inwrap > .top-header .top-navi {padding: .7em 0; letter-spacing: -.5px; display: flex; align-items: center; justify-content: flex-end; border-bottom: 1px solid rgba(255,255,255,0.3);}
-.header-wrapper > .wrapper > .header-inwrap > .top-header .top-navi > .navi {margin-right: 1em;}
+.header-wrapper > .wrapper > .header-inwrap > .top-header .top-navi {padding: .7em 0; letter-spacing: -.5px; display: flex; align-items: center; justify-content: flex-end;
+  border-bottom: 1px solid rgba(255,255,255,0.3);}
+.header-wrapper > .wrapper > .header-inwrap > .top-header .top-navi > .navi {margin-right: 1em; font-weight: 500;}
 
 .header-wrapper > .wrapper > .header-inwrap > .bot-header {padding: 0 1em; display: flex; font-size: .9em; justify-content: space-between; align-items: center;}
 .header-wrapper > .wrapper > .header-inwrap > .bot-header > .bot-navi {display: flex;}

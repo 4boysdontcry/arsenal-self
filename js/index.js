@@ -54,7 +54,7 @@ function slideShop() {
     function onGetData(r) {
         r.shop.forEach(function (v, i) {
             var html = '';
-            html += '<li class="slide">';
+            html += '<li class="slide swiper-slide">';
             html += '<div class="img-wrap">';
             html += '<img src="' + v.src + '" alt="의류" class="w-100">';
             html += '<div class="hover-bg"> <button>shop now</button> </div>';
@@ -67,9 +67,10 @@ function slideShop() {
             html += '</li>';
             $slideWrapper.append(html);
         })
-        var swiper = getSwiper('.shop-wrapper', { break: 3, pager: true, navi: true });
+        // new Swiper('.shop-wrapper .swiper-container');
+        var swiper = getSwiper('.shop-wrapper', { break: 4, navi: true, loop: true });
 		}
-        if($(window.innerWidth) >= '1199px'){'.shop-wrapper', { break: 1, pager: true, navi: true }};
+        // if($(window).innerWidth() <= 1199){'.shop-wrapper', { break: 2, pager: true, navi: true }};
     $.get('../json/shop.json', onGetData);
 }
 
