@@ -62,7 +62,7 @@
 
 /* ********** shop-wrapper *********** */
 .shop-wrapper {width: 100%;}
-.shop-wrapper .slide-stage {width: 100%; margin: 1em 1em 0 1em; position: relative;}
+.shop-wrapper .slide-stage {width: 100%; margin: auto; position: relative;}
 .shop-wrapper .slide-stage .slide-container {width: calc(100% - 30px); margin: auto; overflow: hidden;}
 .shop-wrapper .slide-stage .slide-wrapper {width: 100%;}
 .shop-wrapper .slide-stage .slide {cursor: pointer; padding: 1%; background-color: #fff;

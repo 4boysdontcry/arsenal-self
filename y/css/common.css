@@ -163,7 +163,7 @@ z-index: 99;}
 
 
 /* ***************aside**************** */
-.side-wrapper > a {width: 60px; height: 60px; position: fixed; bottom: 5%; right: 5%; background-color: #f00000; display: flex; justify-content: center; align-items: center; border-radius: 50%;}
+.side-wrapper > a {width: 60px; height: 60px; position: fixed; bottom: 5%; right: 5%; background-color: #f00000; display: flex; justify-content: center; align-items: center; border-radius: 50%; z-index: 10;}
 .side-wrapper a > i {font-size: 1.5em; color: #fff; }
 
 
