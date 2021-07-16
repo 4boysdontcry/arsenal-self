@@ -12,6 +12,7 @@
 ### 3. Javascript
 ```bash
 1. 네비게이션의 움직임
-2. swiper 사용
-3. axios를 통해 데이터 통신
+2. swiper 사용한 판매상품 section
+3. 갤러리 기능
+4. axios를 통해 데이터 통신
 ```
